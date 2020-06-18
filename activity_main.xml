@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+android:padding="3dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        >
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1B5E20"
+
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="@string/team_a"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+android:textColor="@android:color/white"
+        android:text="@string/_0"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="16dp"
+        android:onClick="threeScore"
+        android:text="@string/_3_points"
+        android:background="#388E3C"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="16dp"
+        android:onClick="twoScore"
+        android:text="@string/_2_points"
+        android:background="#388E3C"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:background="#388E3C"
+        android:onClick="freeScore"
+        android:text="@string/free_throws" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#827717"
+
+        >
+
+        <TextView
+            android:id="@+id/textViewB_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Team B"
+           android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="@string/_0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonB3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="16dp"
+            android:onClick="threeScoreB"
+            android:text="@string/_3_points"
+            android:background="#AFB42B"/>
+
+        <Button
+            android:id="@+id/buttonB2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="16dp"
+            android:onClick="twoScoreB"
+            android:text="@string/_2_points"
+            android:background="#AFB42B"/>
+
+        <Button
+            android:id="@+id/buttonB1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AFB42B"
+
+            android:onClick="freeScoreB"
+            android:text="@string/free_throws" />
+    </LinearLayout>
+</LinearLayout>
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="resetNumber"
+        android:textColor="@android:color/white"
+        android:background="#33691E"
+        android:text="Reset"/>
+
+</LinearLayout>
